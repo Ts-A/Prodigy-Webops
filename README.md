@@ -1,3 +1,3 @@
-run
-npm install i
-npm run dev
+##run
+  ###npm install i
+  ###npm run dev

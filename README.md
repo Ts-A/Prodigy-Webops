@@ -1,3 +1,3 @@
 # run #
-   npm install i  <br />
+   npm install  <br />
    npm run dev 

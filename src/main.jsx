@@ -11,6 +11,7 @@ import About from './pages/About';
 import Schedule from './pages/Schedule';
 import Teams from './pages/Teams';
 import Contacts from './pages/Contacts';
+import Gallery from './pages/Gallery';
 
 import './index.css';
 
@@ -24,6 +25,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/about' element={<About />} />
         <Route path='/schedule' element={<Schedule />} />
         <Route path='/contact' element={<Contacts />} />
+        <Route path='/gallery' element={<Gallery />} />
       </Routes>
     </BrowserRouter>
     <Footer />

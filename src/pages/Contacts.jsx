@@ -1,11 +1,30 @@
-import React from 'react'
+import React from 'react';
+import styles from './styles/Contact.module.css';
 
 const Contacts = () => {
   return (
     <container>
-      <h1>CONTACTS</h1>
-    </container>
-  )
-}
+      <h1 id='heading'>MEET THE EXCOMM</h1>
 
-export default Contacts
+      <div className={styles.contacts}>
+        <div className={styles.box}>
+          <img src='https://random.imagecdn.app/500/150'></img>
+          <h3>John Doe</h3>
+          <p>President</p>
+        </div>
+        <div className={styles.box}>
+          <img src='https://random.imagecdn.app/500/150'></img>
+          <h3>John Doe</h3>
+          <p>President</p>
+        </div>
+        <div className={styles.box}>
+          <img src='https://random.imagecdn.app/500/150'></img>
+          <h3>John Doe</h3>
+          <p>President</p>
+        </div>
+      </div>
+    </container>
+  );
+};
+
+export default Contacts;

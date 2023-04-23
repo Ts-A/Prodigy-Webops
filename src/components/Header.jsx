@@ -1,24 +1,37 @@
 import React from 'react';
-import styles from './styles/Header.module.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import logo from '../assets/logo.png';
 
 const Header = () => {
   return (
-    <nav>
-      <a href='/'>
-      <h1 className={styles.title}>Prodigy</h1>
-      </a>
-      <div className={styles.content}>
-        <a href='/about'>
-          <div>About</div>
-        </a>
-        <a href='/schedule'>
-          <div>Schedule</div>
-        </a>
-        <a href='/contact'>
-          <div>Contact</div>
-        </a>
-      </div>
-    </nav>
+    <Navbar
+      collapseOnSelect
+      expand='lg'
+      bg='dark'
+      variant='dark'
+      className='px-4 '
+    >
+      <Navbar.Brand href='/'>
+        <img src={logo} />
+      </Navbar.Brand>{' '}
+      {/* Brand name on the left */}
+      <Navbar.Toggle aria-controls='basic-navbar-nav' />{' '}
+      {/* Toggle button for mobile */}
+      <Navbar.Collapse id='basic-navbar-nav'>
+        {' '}
+        {/* Collapsible Navbar */}
+        <Nav className=''>
+          {' '}
+          {/* Navbar links on the right */}
+          <Nav.Link href='/about'>About</Nav.Link>
+          <Nav.Link href='/schedule'>Schedule</Nav.Link>
+          <Nav.Link href='/contact'>Contact</Nav.Link>
+          <Nav.Link href='/teams'>Teams</Nav.Link>
+          <Nav.Link href='/gallery'>Gallery</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 };
 

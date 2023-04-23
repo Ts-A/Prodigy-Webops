@@ -1,14 +1,61 @@
-container{
+container {
   min-height: 100vh;
   height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url('https://img.freepik.com/premium-photo/factory-polluting-environment-generative-ai_220873-16076.jpg?w=2000');
+  background-size: cover;
+  background-position: top center;
 }
 
-#prodigy{
-  font-size:15em;
+#prodigy {
+  margin-top: 10%;
+  font-size: 15em;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   color: #fff;
+  animation: fadeIn 1s;
+  letter-spacing: 0.05em;
 }
+
+button {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 9999px;
+  padding: 0.5em 2em;
+  font-size: 1.2em;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #1a1a1a;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    letter-spacing: -0.1em;
+  }
+  100% {
+    opacity: 1;
+    letter-spacing: 0.05em;
+  }
+}
+
+@media (max-width: 1200px) {
+  #prodigy {
+    font-size: 10em;
+  }
+}
+
+@media (max-width: 800px) {
+  #prodigy {
+    font-size: 4em;
+  }
+}
+  

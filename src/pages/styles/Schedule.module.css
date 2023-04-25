@@ -21,8 +21,13 @@
   justify-content: space-evenly;
   align-items: center;
   margin-top: 2em;
+}
+
+.popup div div{
+  animation-delay: 2s;
   animation: Popup 0.5s ease-in-out;
 }
+
 
 .cardTitle {
   font-size: 3em;

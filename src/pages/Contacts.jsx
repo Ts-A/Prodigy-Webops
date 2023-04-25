@@ -1,29 +1,20 @@
 import React from 'react';
 import styles from './styles/Contact.module.css';
+import MemberCard from '../components/MemberCard';
+
+const members = [1, 1, 1];
 
 const Contacts = () => {
   return (
-    <container>
-      <h1 id='heading'>MEET THE EXCOMM</h1>
+    <div className="container">
+      <h1 id='heading'>CONTACTS</h1>
 
       <div className={styles.contacts}>
-        <div className={styles.box}>
-          <img src='https://random.imagecdn.app/500/150'></img>
-          <h3>John Doe</h3>
-          <p>President</p>
-        </div>
-        <div className={styles.box}>
-          <img src='https://random.imagecdn.app/500/150'></img>
-          <h3>John Doe</h3>
-          <p>President</p>
-        </div>
-        <div className={styles.box}>
-          <img src='https://random.imagecdn.app/500/150'></img>
-          <h3>John Doe</h3>
-          <p>President</p>
-        </div>
+        {members.map((member) => (
+          <MemberCard />
+        ))}
       </div>
-    </container>
+    </div>
   );
 };
 

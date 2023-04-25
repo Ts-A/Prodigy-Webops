@@ -1,14 +1,16 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import logo from '../assets/logo.png';
+import {  NavLink } from 'react-router-dom';
+import styles from './Header.module.css';
 
 const Header = () => {
   return (
     <Navbar
       collapseOnSelect
       expand='lg'
-      bg='dark'
+      bg='#1a1a1a'
       variant='dark'
       className='px-4 '
     >
@@ -21,14 +23,18 @@ const Header = () => {
       <Navbar.Collapse id='basic-navbar-nav'>
         {' '}
         {/* Collapsible Navbar */}
-        <Nav className=''>
+        <Nav className={styles.navbar}>
           {' '}
           {/* Navbar links on the right */}
-          <Nav.Link href='/about'>About</Nav.Link>
-          <Nav.Link href='/schedule'>Schedule</Nav.Link>
-          <Nav.Link href='/contact'>Contact</Nav.Link>
-          <Nav.Link href='/teams'>Teams</Nav.Link>
-          <Nav.Link href='/gallery'>Gallery</Nav.Link>
+            <Nav.Link>
+              <NavLink to='/' className={styles.link}>Home</NavLink>
+            </Nav.Link>
+            <Nav.Link>
+              <NavLink to='/gallery' className={styles.link}>Gallery</NavLink>
+            </Nav.Link>
+            <Nav.Link>
+              <NavLink to='/teams' className={styles.link}>Teams</NavLink>
+            </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

@@ -1,24 +1,34 @@
 import React from 'react';
+import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav } from 'react-bootstrap';
 import logo from '../assets/logo.png';
-import {  NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './Header.module.css';
 
 const Header = () => {
+  const [expanded, setExpanded] = useState(false);
   return (
     <Navbar
       collapseOnSelect
       expand='lg'
       bg='#1a1a1a'
       variant='dark'
-      className='px-4 '
+      className='px-4'
+      sx={{
+        display: 'flex',
+        alignItems: 'center',
+      }}
+      expanded={expanded}
     >
       <Navbar.Brand href='/'>
         <img src={logo} />
       </Navbar.Brand>{' '}
       {/* Brand name on the left */}
-      <Navbar.Toggle aria-controls='basic-navbar-nav' />{' '}
+      <Navbar.Toggle
+        onClick={() => (expanded ? setExpanded(false) : setExpanded(true))}
+        aria-controls='basic-navbar-nav'
+      />{' '}
       {/* Toggle button for mobile */}
       <Navbar.Collapse id='basic-navbar-nav'>
         {' '}
@@ -26,15 +36,27 @@ const Header = () => {
         <Nav className={styles.navbar}>
           {' '}
           {/* Navbar links on the right */}
-            <Nav.Link>
-              <NavLink to='/' className={styles.link}>Home</NavLink>
-            </Nav.Link>
-            <Nav.Link>
-              <NavLink to='/gallery' className={styles.link}>Gallery</NavLink>
-            </Nav.Link>
-            <Nav.Link>
-              <NavLink to='/teams' className={styles.link}>Teams</NavLink>
-            </Nav.Link>
+          <Nav.Link
+            onClick={() => (expanded ? setExpanded(false) : setExpanded(true))}
+          >
+            <NavLink to='/' className={styles.link}>
+              Home
+            </NavLink>
+          </Nav.Link>
+          <Nav.Link
+            onClick={() => (expanded ? setExpanded(false) : setExpanded(true))}
+          >
+            <NavLink to='/gallery' className={styles.link}>
+              Gallery
+            </NavLink>
+          </Nav.Link>
+          <Nav.Link
+            onClick={() => (expanded ? setExpanded(false) : setExpanded(true))}
+          >
+            <NavLink to='/teams' className={styles.link}>
+              Teams
+            </NavLink>
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

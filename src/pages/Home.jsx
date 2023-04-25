@@ -5,6 +5,7 @@ import About from './About';
 import Events from './Events';
 import Contacts from './Contacts';
 
+
 const Home = () => {
   const about = useRef(null);
 

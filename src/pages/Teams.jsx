@@ -2,7 +2,32 @@ import React from 'react';
 import styles from './styles/Contact.module.css';
 import MemberCard from '../components/MemberCard';
 
-const members = [1, 1, 1];
+const members = [
+  {
+    name: 'Ketki Singh',
+    position: 'Overall Coordinator',
+    img: '1',
+    linkedin: '',
+    email: 'singhketki260@gmail.com',
+    mobileNumber: '91+ 99326 32755',
+  },
+  {
+    name: 'Thanikai Sathiyan',
+    position: 'Chairperson',
+    img: '2',
+    linkedin: 'https://www.linkedin.com/in/thanikai-sathiyan-s',
+    email: 'stsathiyan.nitt@gmail.com',
+    mobileNumber: '91+ 97900 06962',
+  },
+  {
+    name: 'Yuvaraja T',
+    position: 'Treasurer',
+    img: '3',
+    linkedin: '',
+    email: 't.yuvaraja01@gmail.com',
+    mobileNumber: '91+ 91503 64178',
+  },
+];
 
 const Teams = () => {
   return (
@@ -11,15 +36,14 @@ const Teams = () => {
 
       <div className={styles.contacts}>
         {members.map((member) => (
-          <MemberCard />
-        ))}
-      </div>
-
-      <h1 id='heading'>MEET THE CORE</h1>
-
-      <div className={styles.contacts}>
-        {members.map((member) => (
-          <MemberCard />
+          <MemberCard
+            name={member.name}
+            position={member.position}
+            img={member.img}
+            linkedin={member.linkedin}
+            email={member.email}
+            mobileNumber={member.mobileNumber}
+          />
         ))}
       </div>
     </container>

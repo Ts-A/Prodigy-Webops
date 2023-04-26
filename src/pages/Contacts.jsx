@@ -34,7 +34,7 @@ const members = [
 const Contacts = () => {
   return (
     <div className="container">
-      <h1 id='heading'>CONTACTS</h1>
+      <h1 id='heading'>CONTACT US</h1>
 
       <div className={styles.contacts}>
         {members.map((member) => (

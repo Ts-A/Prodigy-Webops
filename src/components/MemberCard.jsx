@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './MemberCard.module.css';
-import mail from '../assets/mail.svg';
-import linkedin from '../assets/linkedIn.svg';
+import linkedin from '../../public/assets/linkedIn.svg'
+import mail from '../../public/assets/mail.svg'
 
 const MemberCard = (props) => {
   return (
     <div className={styles.box}>
       <img src={
-        `./src/assets/contacts/${props.img}.jpg`
+        `./public/assets/contacts/${props.img}.jpg`
       } alt='member'></img>
       <h3>{props.name}</h3>
       <p>{props.position}</p>

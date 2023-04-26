@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles/Contact.module.css';
+import styles from './styles/Teams.module.css';
 import MemberCard from '../components/MemberCard';
 
 const members = [
@@ -32,7 +32,7 @@ const members = [
 const Teams = () => {
   return (
     <container>
-      <h1 id='heading'>MEET THE EXCOMM</h1>
+      <h1 className={styles.meet} id='heading'>MEET THE EXCOMM</h1>
 
       <div className={styles.contacts}>
         {members.map((member) => (

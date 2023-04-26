@@ -18,10 +18,32 @@ body{
   padding-bottom: 1.5em;
   min-height: 80vh;
   height: fit-content;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1{
   text-align: center;
+}
+
+#about{
+  background-color: #1a1a1a;
+  padding: 2em;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  gap:2em;
+  align-items: center;
+  min-height: 30vh;
+  height: fit-content;
+  width: min(95vw,600px);
+}
+#letter{
+  font-size: 2em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin-top: 0.5em;
 }
 #heading{
   font-size: 5em;
@@ -32,6 +54,6 @@ h1{
   #heading{
     font-size: 2.5em;
     margin-top: 0.5em;
-    
   }
+
 }

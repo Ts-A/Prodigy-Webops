@@ -7,11 +7,19 @@ const Gallery = () => {
       <div id="heading">Gallery</div>
       <div className={styles.gallery}>
      {
-       Array.apply(null, Array(20)).map((item) => {
+        [...Array(8)].map((e, i) => {
           return (
-              <img src={`https://picsum.photos/${Math.floor(3+Math.random()*3)*100}/${Math.floor(2+Math.random()*3)*100}`}/>
+            <div className={styles.box} key={i}>
+              <img
+                src={`./public/assets/gallery/${i+1}.jpeg`}
+                alt='gallery'
+                className={styles.img}
+              ></img>
+            </div>
           )
-       })
+        }
+        )
+
      }
         
       </div>

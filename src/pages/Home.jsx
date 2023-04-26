@@ -4,7 +4,7 @@ import styles from './styles/Home.module.css';
 import About from './About';
 import Events from './Events';
 import Contacts from './Contacts';
-
+import arrow from '../../public/assets/arrow.svg';
 
 const Home = () => {
   const about = useRef(null);
@@ -17,7 +17,7 @@ const Home = () => {
     <container>
       <div className={styles.title}>
         <h1 id={styles.prodigy}>PRODIGY</h1>
-        <button onClick={HandleScroll}>Welcome</button>
+        <img src={arrow}></img>
       </div>
       <About ref={about} />
       <Events />

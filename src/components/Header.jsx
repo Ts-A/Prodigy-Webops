@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav } from 'react-bootstrap';
-import logo from '../assets/logo.png';
+import logo from '../../public/assets/logo.png';
 import { NavLink } from 'react-router-dom';
 import styles from './Header.module.css';
 

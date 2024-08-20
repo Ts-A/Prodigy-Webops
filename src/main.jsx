@@ -8,14 +8,18 @@ import Footer from './components/Footer';
 
 import Home from './pages/Home';
 import Teams from './pages/Teams';
+import Gallery from './pages/Gallery';
+
+import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
-    <Header />
     <BrowserRouter>
+    <Header />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/teams' element={<Teams />} />
+        <Route path='/gallery' element={<Gallery />} />
       </Routes>
     </BrowserRouter>
     <Footer />

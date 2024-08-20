@@ -1,9 +1,17 @@
-import React from 'react'
+import React from 'react';
+import styles from './Footer.module.css';
+import heart from '../../public/assets/heart.svg';
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <div className={styles.footer}>
+      Made with
+      <img
+      className = {styles.heart}
+       src={heart} />
+      by Prodigy Webops
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;

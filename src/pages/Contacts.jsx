@@ -1,6 +1,7 @@
 import React from 'react';
-import styles from './styles/Teams.module.css';
-import MemberCard from '../components/MemberCard';
+import styles from './styles/Contact.module.css';
+import MemberCard from '../components/MemberCard'
+
 
 const members = [
   {
@@ -9,7 +10,7 @@ const members = [
     img: '1',
     linkedin: '',
     email: 'singhketki260@gmail.com',
-    mobileNumber: '91+ 99326 32755',
+    mobileNumber: '91+ 99326 32755'
   },
   {
     name: 'Thanikai Sathiyan',
@@ -17,7 +18,7 @@ const members = [
     img: '2',
     linkedin: 'https://www.linkedin.com/in/thanikai-sathiyan-s',
     email: 'stsathiyan.nitt@gmail.com',
-    mobileNumber: '91+ 97900 06962',
+    mobileNumber: '91+ 97900 06962'
   },
   {
     name: 'Yuvaraja T',
@@ -25,29 +26,30 @@ const members = [
     img: '3',
     linkedin: '',
     email: 't.yuvaraja01@gmail.com',
-    mobileNumber: '91+ 91503 64178',
-  },
+    mobileNumber: '91+ 91503 64178' 
+  }
 ];
 
-const Teams = () => {
+
+const Contacts = () => {
   return (
-    <container>
-      <h1 className={styles.meet} id='heading'>MEET THE EXCOMM</h1>
+    <div className="container">
+      <h1 id='heading'>CONTACT US</h1>
 
       <div className={styles.contacts}>
         {members.map((member) => (
-          <MemberCard
-            name={member.name}
-            position={member.position}
-            img={member.img}
-            linkedin={member.linkedin}
-            email={member.email}
-            mobileNumber={member.mobileNumber}
+          <MemberCard 
+          name= {member.name}
+          position= {member.position}
+          img= {member.img}
+          linkedin= {member.linkedin}
+          email= {member.email}
+          mobileNumber= {member.mobileNumber}
           />
         ))}
       </div>
-    </container>
+    </div>
   );
 };
 
-export default Teams;
+export default Contacts;

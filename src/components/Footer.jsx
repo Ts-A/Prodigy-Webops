@@ -1,14 +1,11 @@
-import React from 'react';
-import styles from './Footer.module.css';
-import heart from '../../public/assets/heart.svg';
+import React from "react";
+import styles from "./Footer.module.css";
 
 const Footer = () => {
   return (
     <div className={styles.footer}>
       Made with
-      <img
-      className = {styles.heart}
-       src={heart} />
+      <img className={styles.heart} src={"/assets/icons/heart.svg"} />
       by Prodigy Webops
     </div>
   );

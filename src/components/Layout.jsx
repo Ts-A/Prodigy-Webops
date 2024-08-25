@@ -1,9 +1,10 @@
 import React from "react";
+import Sidebar from "./Sidebar";
 
 const Layout = () => {
   return (
     <div className="grid grid-cols-3 h-full">
-      <div className="bg-indigo-500">Side Bar</div>
+      <Sidebar />
       <div className="bg-indigo-300 col-span-2">Main Page</div>
     </div>
   );

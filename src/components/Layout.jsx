@@ -1,11 +1,14 @@
 import React from "react";
+import Hero from "./Hero";
 import Sidebar from "./Sidebar";
 
 const Layout = () => {
   return (
     <div className="grid grid-cols-3 h-full">
       <Sidebar />
-      <div className="bg-indigo-300 col-span-2">Main Page</div>
+      <div className="bg-indigo-300 col-span-2">
+        <Hero />
+      </div>
     </div>
   );
 };

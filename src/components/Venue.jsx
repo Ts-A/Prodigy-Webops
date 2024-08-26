@@ -1,5 +1,4 @@
 import React from "react";
-import { VelocityScroll } from "./magicui/scroll-based-velocity";
 
 const Venue = () => {
   return (

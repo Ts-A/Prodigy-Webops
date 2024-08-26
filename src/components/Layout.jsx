@@ -1,4 +1,5 @@
 import React from "react";
+import CTA from "./CTA";
 import Hero from "./Hero";
 import Sidebar from "./Sidebar";
 import Testimonial from "./Testimonial";
@@ -12,6 +13,7 @@ const Layout = () => {
         <Hero />
         <Venue />
         <Testimonial />
+        <CTA />
       </div>
     </div>
   );

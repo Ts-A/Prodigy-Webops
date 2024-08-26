@@ -44,10 +44,10 @@ const Testimonial = () => {
 
   return (
     <div className="my-10">
-      <div className="text-center text-4xl font-semibold">
-        Set your expectations high!
+      <div className="text-center text-3xl font-semibold">
+        Hear from our past participants
       </div>
-      <Marquee pauseOnHover className="[--duration:20s] mt-10">
+      <Marquee pauseOnHover className="[--duration:20s] mt-5">
         {reviews.map((review) => (
           <ReviewCard key={review.username} {...review} />
         ))}

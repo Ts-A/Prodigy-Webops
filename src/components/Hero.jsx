@@ -9,7 +9,7 @@ const Hero = () => {
       </div>
       <div>
         <div className={"text-lg italic text-center"}>
-          when innovation meets excellence
+          where innovation meets excellence
         </div>
       </div>
     </div>

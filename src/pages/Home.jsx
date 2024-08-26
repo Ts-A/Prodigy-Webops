@@ -1,7 +1,6 @@
 import BlurIn from "@/components/magicui/blur-in";
 import React, { useRef } from "react";
 import About from "./About";
-import Contacts from "./Contacts";
 import Events from "./Events";
 import styles from "./styles/Home.module.css";
 

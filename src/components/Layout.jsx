@@ -2,6 +2,7 @@ import React from "react";
 import CTA from "./CTA";
 import Hero from "./Hero";
 import Sidebar from "./Sidebar";
+import Team from "./Team";
 import Testimonial from "./Testimonial";
 import Venue from "./Venue";
 
@@ -13,6 +14,7 @@ const Layout = () => {
         <Hero />
         <Venue />
         <Testimonial />
+        <Team />
         <CTA />
       </div>
     </div>

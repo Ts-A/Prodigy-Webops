@@ -6,63 +6,63 @@ const reviews = [
     name: "Jack",
     username: "@jack",
     body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://avatar.vercel.sh/jack",
     gender: "male",
+    id: 1,
   },
   {
+    id: 2,
     name: "Jill",
     username: "@jill",
     body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://avatar.vercel.sh/jill",
     gender: "female",
   },
   {
+    id: 3,
     name: "John",
     username: "@john",
     body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/john",
     gender: "female",
   },
   {
+    id: 4,
     name: "Jane",
     username: "@jane",
     body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jane",
     gender: "female",
   },
   {
+    id: 5,
     name: "Jenny",
     username: "@jenny",
     body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jenny",
     gender: "male",
   },
   {
+    id: 6,
     name: "James",
     username: "@james",
     body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/james",
     gender: "male",
   },
   {
+    id: 7,
     name: "Jane",
     username: "@jane",
     body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jane",
     gender: "female",
   },
   {
+    id: 8,
     name: "Jenny",
     username: "@jenny",
     body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jenny",
     gender: "male",
   },
   {
+    id: 9,
     name: "James",
     username: "@james",
     body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/james",
     gender: "male",
   },
 ];
@@ -70,7 +70,7 @@ const reviews = [
 const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
 
-const ReviewCard = ({ img, name, username, body, gender }) => {
+const ReviewCard = ({ name, username, body, gender }) => {
   return (
     <figure
       className={cn(
@@ -102,19 +102,19 @@ const ReviewCard = ({ img, name, username, body, gender }) => {
 
 const Testimomial = () => {
   return (
-    <div>
-      <div className="text-center text-[40px] bg-pr-p text-pr-s font-semibold my-5">
-        Hear what they say about us!
+    <div className="bg-pr-s text-pr-p">
+      <div className="text-center text-[40px] font-semibold my-5">
+        Hear what they say
       </div>
-      <div className="relative flex w-9/12 mx-auto px-10 flex-col items-center justify-center overflow-hidden bg-pr-t">
+      <div className="border border-pr-p relative flex w-9/12 mx-auto px-10 flex-col items-center justify-center overflow-hidden bg-pr-t">
         <Marquee pauseOnHover className="my-5 [--duration:20s]">
           {firstRow.map((review) => (
-            <ReviewCard key={review.username} {...review} />
+            <ReviewCard key={review.id} {...review} />
           ))}
         </Marquee>
         <Marquee reverse pauseOnHover className="my-5 [--duration:20s]">
           {secondRow.map((review) => (
-            <ReviewCard key={review.username} {...review} />
+            <ReviewCard key={review.id} {...review} />
           ))}
         </Marquee>
       </div>

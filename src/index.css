@@ -29,6 +29,9 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+    --pr-p: #ff9900;
+    --pr-s: #181818;
+    --pr-t: #454545;
   }
 
   .dark {
@@ -73,4 +76,12 @@ body,
 #root {
   height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.bungee-regular {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }

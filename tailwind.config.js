@@ -18,6 +18,9 @@ module.exports = {
     },
     extend: {
       colors: {
+        "pr-p": "var(--pr-p)",
+        "pr-s": "var(--pr-s)",
+        "pr-t": "var(--pr-t)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

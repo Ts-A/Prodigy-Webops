@@ -5,8 +5,12 @@ const Navbar = () => {
         <img src="/assets/logo.png" alt="logo" />
       </div>
       <div className="flex gap-7 font-semibold">
-        <nav className="cursor-pointer">Schedule</nav>
-        <nav className="cursor-pointer">Contact</nav>
+        <nav className="cursor-pointer">
+          <a href="#schedule">Schedule</a>
+        </nav>
+        <nav className="cursor-pointer">
+          <a href="#team">Team</a>
+        </nav>
       </div>
     </div>
   );

@@ -31,8 +31,8 @@ const Team = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center bg-pr-s mx-20">
-      <div className="bg-pr-p text-pr-s font-bold text-[40px] px-10">
+    <div id="team" className="flex flex-col items-center bg-pr-s mx-20">
+      <div className="bg-pr-p text-pr-s bungee-regular font-bold text-[40px] px-10">
         The Team
       </div>
       <div className="flex flex-col xl:flex-row gap-5">

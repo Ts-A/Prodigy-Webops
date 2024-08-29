@@ -9,7 +9,7 @@ import Testimonial from "./ui/Testimonial";
 
 const App = () => {
   return (
-    <div className="flex flex-col min-h-full">
+    <div className="flex flex-col min-h-full bg-pr-s text-pr-p">
       <Navbar />
       <Hero />
       <InfiniteVenue />

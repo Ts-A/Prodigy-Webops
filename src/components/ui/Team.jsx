@@ -31,18 +31,18 @@ const Team = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center bg-pr-s">
+    <div className="flex flex-col items-center bg-pr-s mx-20">
       <div className="bg-pr-p text-pr-s font-bold text-[40px] px-10">
         The Team
       </div>
-      <div className="flex flex-row flex-wrap">
+      <div className="flex flex-col xl:flex-row gap-5">
         {members.map((member) => {
           return (
-            <div key={member.id} className="w-full md:w-1/2">
-              <div className="w-3/4 mx-auto my-5">
+            <div key={member.id}>
+              <div className="my-5 border border-pr-p rounded-lg">
                 <img
                   src={member.image}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-96 rounded-lg"
                   alt={member.name}
                 />
                 <div className="px-5 py-2 flex justify-between text-pr-s bg-pr-p">

@@ -1,24 +1,6 @@
 const Footer = () => {
-  const footerSites = [
-    {
-      id: 1,
-      label: "github",
-      icon: "/assets/icons/github",
-    },
-    {
-      id: 2,
-      label: "linkedin",
-      icon: "/assets/icons/linkedin",
-    },
-    {
-      id: 3,
-      label: "instragram",
-      icon: "/assets/icons/instragram",
-    },
-  ];
-
   return (
-    <div className="mt-auto  bg-pr-t h-[50px] flex justify-center items-center text-center">
+    <div className="bg-pr-t h-[50px] flex justify-center items-center text-center">
       <span className="font-bold px-2">Made with ❤️ by Prodigy WebOps</span>
       <div className="divide-x divide-pr-s flex">
         <span>

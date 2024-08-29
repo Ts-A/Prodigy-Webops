@@ -4,6 +4,7 @@ import InfiniteVenue from "./ui/InfiniteVenue";
 import Navbar from "./ui/Navbar";
 import Schedule from "./ui/Schedule";
 import Team from "./ui/Team";
+// import Team from "./ui/Team";
 import Testimonial from "./ui/Testimonial";
 
 const App = () => {

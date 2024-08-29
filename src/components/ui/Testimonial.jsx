@@ -103,7 +103,7 @@ const ReviewCard = ({ name, username, body, gender }) => {
 const Testimomial = () => {
   return (
     <div className="bg-pr-s text-pr-p">
-      <div className="text-center text-[40px] font-semibold my-5">
+      <div className="text-center text-[40px] font-semibold my-5 bg-pr-p text-pr-s">
         Hear what they say
       </div>
       <div className="border border-pr-p relative flex w-9/12 mx-auto px-10 flex-col items-center justify-center overflow-hidden bg-pr-t">

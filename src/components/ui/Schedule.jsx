@@ -48,11 +48,14 @@ const Schedule = () => {
           );
         if (item.type === "event")
           return (
-            <div key={index} className="my-10 w-1/2 lg:w-1/4 mx-auto border">
-              <div className="font-bold text-center bg-pr-p text-pr-t text-[30px]">
+            <div
+              key={index}
+              className="my-10 w-1/2 lg:w-1/4 mx-auto border border-pr-t"
+            >
+              <div className="font-bold text-center bg-pr-p text-pr-s text-[30px]">
                 {item.title}
               </div>
-              <p className="text-white font-light py-5 px-3">{item.text}</p>
+              <p className="text-white bg-pr-s  py-5 px-3">{item.text}</p>
             </div>
           );
       })}

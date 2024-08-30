@@ -3,45 +3,45 @@ import { cn } from "@/lib/utils";
 
 const reviews = [
   {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
+    name: "Abhishek R",
+    username: "@Abhishek",
+    body: "Amazing event. Had great fun.",
     gender: "male",
     id: 1,
   },
   {
     id: 2,
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    gender: "female",
+    name: "Madhav Jain",
+    username: "@madhav",
+    body: "I don't know what to say. I'm speechless. This was amazing.",
+    gender: "male",
   },
   {
     id: 3,
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
+    name: "Anushka",
+    username: "@Anushka",
+    body: "Wonderful time with all participants",
     gender: "female",
   },
   {
     id: 4,
-    name: "Jane",
-    username: "@jane",
-    body: "I'm at a loss for words. This is amazing. I love it.",
+    name: "Divya",
+    username: "@Divya",
+    body: "Superb event. Loved interacting with all the fellow participants and co-ordinators.",
     gender: "female",
   },
   {
     id: 5,
-    name: "Jenny",
+    name: "Pooja",
     username: "@jenny",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    gender: "male",
+    body: "Must attend event! Kudoos team.",
+    gender: "female",
   },
   {
     id: 6,
     name: "James",
     username: "@james",
-    body: "I'm at a loss for words. This is amazing. I love it.",
+    body: "One word: FANTASTIC",
     gender: "male",
   },
   {
@@ -51,24 +51,10 @@ const reviews = [
     body: "I'm at a loss for words. This is amazing. I love it.",
     gender: "female",
   },
-  {
-    id: 8,
-    name: "Jenny",
-    username: "@jenny",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    gender: "male",
-  },
-  {
-    id: 9,
-    name: "James",
-    username: "@james",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    gender: "male",
-  },
 ];
 
-const firstRow = reviews.slice(0, reviews.length / 2);
-const secondRow = reviews.slice(reviews.length / 2);
+const firstRow = reviews;
+const secondRow = reviews;
 
 const ReviewCard = ({ name, username, body, gender }) => {
   return (
